@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* body{
+    overflow-x: hidden;
+} */
+body::-webkit-scrollbar {
+    display: none;
+  }
+.main_section{
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.main_game_board_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url(/assets/images/main_bg.png); */
+    background: url(../images/main_bg.png);
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
+}
+.game_container{
+    position: relative;
+    /* width: 560px; */
+    padding: 20px;
+    background-color: rgb(17, 18, 20);
+    border-radius: 5px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.tile_row{
+    display: flex;
+    margin-bottom: 10px;
+}
+.tile{
+    background-color: rgb(33, 35, 40);
+    width: 92px;
+    height: 84px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tile_hover:hover{
+   background-color: rgba(128, 128, 128, 0.658);
+   transition: 0.2s ease-in-out;
+}
+.tile_row .tile:last-child{
+    margin-right: 0px;
+}
+/* .game_container:last-child{
+    margin-bottom: 0px;
+} */
+
+.additional_img{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.item_2{
+    position: relative;
+}
+.item_1 img{
+    width: 74px;
+    height: 20px;
+}
+.item_2 img{
+    position: absolute;
+    width: 135px;
+    height: 50px;
+    right: 0;
+    top: -30px;
+}
+
+/* ================================= */
+.controls{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: 	#5f5f5f60;
+    width: 100vw;
+    height: 70px;
+}
+.controls i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.volume_controls{
+    display: flex;
+    margin-left:20px ;
+}
+.control_item{
+    margin-right: 30px;
+}
+.additionl_controls{
+    margin-right:50px ;
+}
+
+/* ==============Model=================== */
+.action_box{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(53, 53, 53);
+    width: 400px;
+    font-family: 'Poppins', sans-serif;
+    /* height: 150px; */
+}
+.user_input_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.input_item span{
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+}
+.input_item input{
+    background-color: transparent;
+    border: 1px solid;
+    height: 30px;
+}
+.start_button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.start_button button{
+    background-image: conic-gradient(from 1turn,#6ACF15,#209B44);
+    border: 0;
+    width: 200px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+
+/* ============================================ */
+.main_starting_screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(42, 43, 48);
+}
+.main_starting_btn button{
+    background: conic-gradient(from 1turn,#6ACF15,#209B44);
+    border: 0;
+    width: 350px;
+    height: 70px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.main_starting_btn button:hover{
+    background: rgba(128, 128, 128, 0.534);
+    transition: 0.3s ease-in-out;
+}
+
+.total_score{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.total_score h2{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(55, 186, 27);
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+.tile_dimond{
+    background: url(../images/dimond.png);
+    /* background-color: rgb(33, 35, 40); */
+    background-color: rgb(79, 0, 143);
+    background-size: cover;
+}
+.tile_bomb{
+    background: url(../images/bomb.png);
+    background-color: rgb(33, 35, 40);
+    background-size: cover;
+}
+.remaning_tile_show{
+    background: url(../images/remaning_tiles.png);
+    background-color: rgb(33, 35, 40);
+    background-size: cover;
+}
+.game_over{
+    font-size: 80px;
+    color: rgb(55, 186, 27);
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.hide_screen{
+    display: none;
+}
+.btn_active{
+    color: rgb(55, 186, 27);
+}

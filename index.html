@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/6fb7a193c6.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/6fb7a193c6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="main_section">
+
+
+        <div class="total_score hide_screen">
+            <h2 class="score">Score: 00</h2>
+        </div>
+
+
+        <div class="main_game_board_container hide_screen">
+
+            <div class="game_over hide_screen">
+                <h1>Game</h1>
+            </div>
+
+            <!-- ==================== game_board============================== -->
+            <div class="game_container" >
+
+                <!-- <div class="tile_row">
+                    <div class="tile tile_hover tile_dimond"></div>
+                    <div class="tile tile_hover tile_bomb"></div>
+                    <div class="tile tile_hover"></div>
+                    <div class="tile tile_hover"></div>
+                    <div class="tile tile_hover"></div>
+                </div> -->
+
+
+
+                <!-- skull_image -->
+                <div class="additional_img">
+                    <div class="item_1">
+                        <img src="assets/images/box-bg1.webp" alt="">
+                    </div>
+                    <div class="item_2">
+                        <img src="assets/images/box-bg2.webp" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="game_over hide_screen">
+                <h1>Over</h1>
+            </div>
+
+        </div>
+
+        <!-- ============================================= -->
+        <div class="controls hide_screen">
+
+            <div class="volume_controls">
+                <div class="control_item">
+                    <i class="fa-solid fa-music additional_btns btn_active" id="sfx_audio"></i>
+                </div>
+                <div class="control_item">
+                    <i class="fa-solid fa-volume-high additional_btns btn_active" id="bg_music_audio"></i>
+                </div>
+            </div>
+
+            <div class="additionl_controls">
+                <div class="additional_control_item">
+                    <i class="fa-solid fa-rotate-right additional_btns" id="restart_btn"></i>
+                </div>
+            </div>
+
+            <!-- <div class="control_item">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </div> -->
+        </div>
+
+        <!-- =======================model============================== -->
+        <div class="action_box hide_screen">
+
+            <div class="user_input_container">
+                <div class="input_item">
+                    <span>Rows</span>
+                    <input type="text" required value="" id="input_rows">
+                </div>
+              
+                <div class="input_item">
+                    <span>Columns</span>
+                    <input type="text" required value="" id="input_col">
+                </div>
+            </div>
+            <div class="start_button">
+                <button id="create_board_btn">Start Game</button>
+                <!-- <input type="submit" value="Start Game"> -->
+            </div>
+
+        </div>
+
+
+        <!-- =============================================== -->
+        <div class="main_starting_screen">
+            <div class="starting_screen_img">
+                <img src="assets/images/main_screen.jpg" alt="">
+            </div>
+            <div class="main_starting_btn">
+                <button id="main_start_btn">Start Game</button>
+            </div>
+        </div>
+
+    </section>
+    <audio src="assets/audio/sound_bg.mp3" id="bg_audio" loop ></audio>
+    <audio src="assets/audio/mine_click.mp3" id="mine_click_audio" ></audio>
+    <audio src="assets/audio/tile-click.mp3" id="tile_click_audio"></audio>
+    <audio src="assets/audio/tile-hover.mp3" id="tile_hover_audio"></audio>
+</body>
+<script src="assets/js/main.js"></script>
+</html>
